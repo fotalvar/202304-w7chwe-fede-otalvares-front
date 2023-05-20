@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="59px" height="59px" viewBox="0 0 59 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 2</title>
+    <defs>
+        <linearGradient x1="27.9661017%" y1="22.8813559%" x2="82.2033898%" y2="88.9830508%" id="linearGradient-1">
+            <stop stop-color="#4F62D3" offset="0%"></stop>
+            <stop stop-color="#DE306C" offset="43.5237%"></stop>
+            <stop stop-color="#D92E7A" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="31.3559322%" cy="95.7627119%" fx="31.3559322%" fy="95.7627119%" r="53.2213559%" id="radialGradient-2">
+            <stop stop-color="#FFC964" offset="0%"></stop>
+            <stop stop-color="#FFA600" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2">
+            <circle id="Oval" fill="url(#linearGradient-1)" fill-rule="nonzero" cx="29.5" cy="29.5" r="29.5"></circle>
+            <g id="Group">
+                <circle id="Oval" fill="url(#radialGradient-2)" fill-rule="nonzero" cx="29.5" cy="29.5" r="29.5"></circle>
+                <circle id="Oval" stroke="#FFFFFF" stroke-width="3" cx="29.5" cy="29.5" r="22"></circle>
+                <path d="M29.6275,21 C35.7401,21 41.2634,23.8105 46.2549,29.295 C41.2627,34.7781 35.7397,37.5882 29.6275,37.5882 C23.5148,37.5882 17.9915,34.7777 13,29.2932 C17.9922,23.8102 23.5152,21 29.6275,21 Z" id="Path" stroke="#FFFFFF" stroke-width="3"></path>
+                <path d="M29.1524,31.1373 C31.7761,31.1373 33.9031,29.0743 33.9031,26.5294 C33.9031,23.9846 31.7761,21.9216 29.1524,21.9216 C26.5287,21.9216 24.4017,23.9846 24.4017,26.5294 C24.4017,29.0743 26.5287,31.1373 29.1524,31.1373 Z" id="Path" stroke="#FFFFFF" stroke-width="3"></path>
+            </g>
+        </g>
+    </g>
+</svg>
