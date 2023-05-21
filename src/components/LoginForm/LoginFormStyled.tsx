@@ -3,16 +3,14 @@ import styled from "styled-components";
 const LoginFormStyled = styled.form`
   display: flex;
   flex-direction: column;
-  width: 320px;
+  width: 100%;
   margin: 0, auto;
-  gap: 20px;
+  gap: 10px;
 
   .login-form {
     &__button {
       height: 51px;
-      left: 16px;
-      right: 16px;
-      bottom: 406px;
+      margin-top: 30px;
       background: #d62f7f;
       border-radius: 100px;
       border: none;

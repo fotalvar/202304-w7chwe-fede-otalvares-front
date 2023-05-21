@@ -1,6 +1,6 @@
 import { useState } from "react";
 import useUser from "../../hooks/useUser";
-import LoginFormStyled from "./LoginFormStyles";
+import LoginFormStyled from "./LoginFormStyled";
 
 const LoginForm = (): JSX.Element => {
   const [loginData, setLoginData] = useState({ username: "", password: "" });
@@ -22,7 +22,12 @@ const LoginForm = (): JSX.Element => {
 
   return (
     <main className="login">
-      <img src="./logo.svg" alt="Isdigram logo" width="300" />
+      <img
+        src="./logo.svg"
+        alt="Isdigram logo"
+        width="210"
+        className="login__logo"
+      />
       <LoginFormStyled className="login-form" onSubmit={handleSubmit}>
         <span className="login-form___error"></span>
         <input

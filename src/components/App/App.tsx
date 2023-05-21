@@ -1,17 +1,7 @@
-import { ThemeProvider } from "styled-components";
-import LoginForm from "../LoginForm/LoginForm";
-import GlobalStyle from "../../styles/GlobalStyle";
-import theme from "../../styles/theme/theme";
+import Layout from "../Layout/Layout";
 
 const App = (): JSX.Element => {
-  return (
-    <>
-      <ThemeProvider theme={theme}>
-        <GlobalStyle />
-        <LoginForm />
-      </ThemeProvider>
-    </>
-  );
+  return <Layout />;
 };
 
 export default App;
