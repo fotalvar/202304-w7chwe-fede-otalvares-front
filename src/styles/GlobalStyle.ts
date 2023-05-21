@@ -34,21 +34,19 @@ ul {
   margin: 0;
 }
 
-#root {
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  margin: 0 auto;
-  align-items: center;
-}
-
 .login{
-  min-height: 100vh;
-  justify-content: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 300px;
+
+  &__logo {
+  width: 210px;
+  padding: 0 0 10px 0;
 }
+  }
 `;
 
 export default GlobalStyle;
