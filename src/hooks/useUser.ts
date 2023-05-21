@@ -11,8 +11,8 @@ const useUser = () => {
   const getUserToken = async (userData: UserData): Promise<string> => {
     const {
       data: { token },
-    } = await axios.post<{ token: string }>(`${apiUrl}/login`, userData);
-
+    } = await axios.post<{ token: string }>(`${apiUrl}/user/login`, userData);
+    localStorage.setItem("token", token);
     return token;
   };
   return { getUserToken };

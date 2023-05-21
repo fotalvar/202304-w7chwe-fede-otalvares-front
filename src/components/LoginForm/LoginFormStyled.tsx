@@ -26,6 +26,14 @@ const LoginFormStyled = styled.form`
       height: 60px;
       padding: 15px;
     }
+
+    &___error {
+      color: #d96060;
+      font-family: sans-serif;
+      font-size: 15px;
+      text-align: center;
+      padding: 10px;
+    }
   }
 `;
 

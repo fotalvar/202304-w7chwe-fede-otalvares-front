@@ -7,8 +7,8 @@ const routes: RouteObject[] = [
     path: "/",
     element: <App />,
     children: [
-      { index: true, element: <Navigate to={"/login"} /> },
-      { path: "/login", element: <LoginPage /> },
+      { index: true, element: <Navigate to={"/user/login"} replace /> },
+      { path: "user/login", element: <LoginPage /> },
     ],
   },
 ];
