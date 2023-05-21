@@ -4,6 +4,7 @@ import LoginFormStyled from "./LoginFormStyled";
 
 const LoginForm = (): JSX.Element => {
   const [loginData, setLoginData] = useState({ username: "", password: "" });
+  const [errorResponse, setErrorResponse] = useState("");
 
   const { getUserToken } = useUser();
 
@@ -17,19 +18,23 @@ const LoginForm = (): JSX.Element => {
   const handleSubmit = async (event: { preventDefault: () => void }) => {
     event.preventDefault();
     setLoginData({ username: "", password: "" });
-    await getUserToken(loginData);
+    try {
+      await getUserToken(loginData);
+    } catch (error: unknown) {
+      setErrorResponse("Incorrect user or password");
+    }
   };
 
   return (
     <main className="login">
       <img
-        src="./logo.svg"
+        src="../logo.svg"
         alt="Isdigram logo"
         width="210"
         className="login__logo"
       />
       <LoginFormStyled className="login-form" onSubmit={handleSubmit}>
-        <span className="login-form___error"></span>
+        <span className="login-form___error">{errorResponse}</span>
         <input
           className="login-form__user"
           type="text"
