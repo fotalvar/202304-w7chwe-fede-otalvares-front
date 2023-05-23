@@ -4,10 +4,9 @@ interface UserData {
   username: string;
   password: string;
 }
+export const apiUrl = import.meta.env.VITE_API_URL;
 
 const useUser = () => {
-  const apiUrl = import.meta.env.VITE_API_URL;
-
   const getUserToken = async (userData: UserData): Promise<string> => {
     const {
       data: { token },
